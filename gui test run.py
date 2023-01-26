@@ -14,6 +14,8 @@ class Window(Frame): #defines window hahahahh
 
         helloButton = Button(self, text="click!", command=self.clickHelloButton)
 
+        helloButton.place(x=42, y=57)
+
 
     def clickExitButton(self):
         exit()
