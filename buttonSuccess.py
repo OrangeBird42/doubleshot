@@ -26,7 +26,7 @@ class Window(Frame): #defines window hahahahh
 
     def clickHelloButton(self): 
         #tkinter.messagebox.showinfo("hello!", "nice to meet you!")
-        print(readFruitContents)
+        tkinter.messagebox.showinfo("Fruit List!!", readFruitContents)
 
 readFruit.close()
 root = Tk()
