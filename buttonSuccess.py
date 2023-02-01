@@ -21,7 +21,7 @@ class Window(Frame): #defines window hahahahh
         exit()
 
     def clickHelloButton(self): #doesnt work rn
-        tkinter.messagebox.showinfo("hello!")
+        tkinter.messagebox.showinfo("hello!", "nice to meet you!")
 
 root = Tk()
 app = Window(root)
