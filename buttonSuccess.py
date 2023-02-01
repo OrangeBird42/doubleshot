@@ -1,5 +1,5 @@
 from tkinter import *
-
+import tkinter.messagebox
 
 class Window(Frame): #defines window hahahahh
     def __init__(self, master=None):
@@ -21,7 +21,7 @@ class Window(Frame): #defines window hahahahh
         exit()
 
     def clickHelloButton(self): #doesnt work rn
-        print("hello!")
+        tkinter.messagebox.showinfo("hello!")
 
 root = Tk()
 app = Window(root)
