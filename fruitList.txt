@@ -18,8 +18,3 @@ Lemon
 Lime
 Pomegranate
 Kiwi
-
-
-
-
-
