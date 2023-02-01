@@ -1,6 +1,10 @@
 from tkinter import *
 import tkinter.messagebox
 
+
+readFruit = open('fruitList.txt', "r")
+readFruitContents = readFruit.read()
+
 class Window(Frame): #defines window hahahahh
     def __init__(self, master=None):
         Frame.__init__(self, master)
@@ -20,9 +24,11 @@ class Window(Frame): #defines window hahahahh
     def clickExitButton(self):
         exit()
 
-    def clickHelloButton(self): #doesnt work rn
-        tkinter.messagebox.showinfo("hello!", "nice to meet you!")
+    def clickHelloButton(self): 
+        #tkinter.messagebox.showinfo("hello!", "nice to meet you!")
+        print(readFruitContents)
 
+readFruit.close()
 root = Tk()
 app = Window(root)
 root.wm_title("Tkinter window") #names the window
