@@ -1,9 +1,12 @@
 from tkinter import *
 import tkinter.messagebox
-
+import random
 
 readFruit = open('fruitList.txt', "r")
-readFruitContents = readFruit.read()
+#readFruitContents = readFruit.read()
+def random_line(fruitList):
+    lines = open(fruitList).read().splitlines()
+    return random.choice(lines)
 
 class Window(Frame): #defines window hahahahh
     def __init__(self, master=None):
@@ -26,7 +29,8 @@ class Window(Frame): #defines window hahahahh
 
     def clickHelloButton(self): 
         #tkinter.messagebox.showinfo("hello!", "nice to meet you!")
-        tkinter.messagebox.showinfo("Fruit List!!", readFruitContents)
+        #tkinter.messagebox.showinfo("Fruit List!!", readFruitContents)
+        tkinter.messagebox.showinfo("Fruit List", random_line('fruitList.txt'))
 
 readFruit.close()
 root = Tk()
