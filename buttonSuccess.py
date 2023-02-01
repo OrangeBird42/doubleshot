@@ -19,7 +19,7 @@ class Window(Frame): #defines window hahahahh
         
         exitButton.place(x=0, y=0)
 
-        helloButton = Button(self, text="click!", command=self.clickHelloButton)
+        helloButton = Button(self, text="click for fruit!", command=self.clickHelloButton)
 
         helloButton.place(x=42, y=57)
 
